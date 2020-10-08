@@ -3,19 +3,62 @@
     <style>
          h2 {
        text-align: center;
-        color: olive;
+        color: red;
         font-size: 50px;
          }
 
         #toggle-button {
             text-align: center;
+            
+       
         }
 
         button {
-            color: olive;
+            color: white;
             border-radius: 3px;
+            margin-top: 13em;
+            /* size: 49px; */
+            padding: 2em;
+            background: red;
+            font-size: 15px;
+            font-family: serif;
+            FONT-WEIGHT: 800;
+            border-radius: 42px
         }
 
+        #toggle-button:visited {
+            text-decoration: none;
+        }
+
+        button:visited {
+            text-decoration: none;
+        }
+
+        #hex-number {
+            color: black;
+            text-align: center;
+             margin-top: -226px;
+            font-size: 44px;
+            font-weight: bold;
+}
+        
+        #return-button {
+            position: fixed;
+             margin-left: -8px;
+            background: black;
+            padding: 10px;
+            /* margin-top: 6em; */
+        }
+
+        #return-link {
+            color: wheat;
+            text-decoration: none;
+        }
+
+        #return-button:hover {
+            color: white;
+            background-color: red;
+        }
     </style>
 
 
@@ -31,33 +74,34 @@
         <div id="toggle-button">
         <button id="changeColorButton" onclick="changeColor()" >Change Color </button>
         </div>  
+        <p id="hex-number"></p>
+        <p id="return-button"><a id="return-link" href="index.html">Return to project exhibition page.</a></p>
+        
     </body>
 </html>
 
 <script>
-    function getRandom () {
-let max = Math.floor(10);
-    min = Math.floor(1);
-    randomNumber = Math.floor(Math.random() * (max - min) + 1); 
-    return randomNumber;
-}
+   
+    
+   
 
-function changeColor () {
-    let backgroundColors = ["...", "blue", "yellow", "orange", "white", "purple", "cyan", "brown", "grey", "red" ];
-    getRandom()
-    document.getElementById("main").style.backgroundColor = backgroundColors[randomNumber];
-}
+    
+      function getRandom () { 
+        let hexValueDigits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+        hex = "#"
 
+        for (i = 0; i < 6; i++) { 
+           const index = Math.floor(Math.random() * hexValueDigits.length);
+                hex += hexValueDigits[index];
+       }
+        }
 
-</script>
-
-
-
-
-
-
-
-
+        function changeColor () {
+            getRandom();
+            document.getElementById("main").style.backgroundColor = hex;
+            document.getElementById("hex-number").innerHTML = hex;
+        }
+            </script>          
 
 
 
@@ -70,10 +114,3 @@ function changeColor () {
 
 
 
-
-
-
-
-
-
-<script src="color-changer.js"></script>
