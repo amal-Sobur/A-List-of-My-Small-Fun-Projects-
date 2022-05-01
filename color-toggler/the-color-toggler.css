@@ -1,0 +1,58 @@
+h2 {
+    text-align: center;
+     color: red;
+     font-size: 50px;
+      }
+
+     #toggle-button {
+         text-align: center;
+         
+    
+     }
+
+     button {
+         color: white;
+         border-radius: 3px;
+         margin-top: 13em;
+         /* size: 49px; */
+         padding: 2em;
+         background: red;
+         font-size: 15px;
+         font-family: serif;
+         FONT-WEIGHT: 800;
+         border-radius: 42px
+     }
+
+     #toggle-button:visited {
+         text-decoration: none;
+     }
+
+     button:visited {
+         text-decoration: none;
+     }
+
+     #hex-number {
+         color: black;
+         text-align: center;
+          margin-top: -226px;
+         font-size: 44px;
+         font-weight: bold;
+}
+     
+     #return-button {
+         position: fixed;
+          margin-left: -8px;
+         background: black;
+         padding: 10px;
+         /* margin-top: 6em; */
+     }
+
+     #return-link {
+         color: wheat;
+         text-decoration: none;
+     }
+
+     #return-button:hover {
+         color: white;
+         background-color: red;
+     }

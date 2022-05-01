@@ -1,0 +1,80 @@
+body {
+    background: #d44d0070;
+}
+
+button {
+    font-family: cursive;
+    font-weight: bolder;
+}
+ 
+
+#green-button {
+    width: 181px;
+    height: 65px;
+    background: green;
+    border-radius: 40px
+}
+
+
+#blue-button {
+    width: 181px;
+    height: 65px;
+    background: blue;
+    border-radius: 40px
+}
+
+
+#red-button {
+    width: 181px;
+    height: 65px;
+    background: red;
+    border-radius: 40px
+}
+
+#reset {
+    width: 181px;
+    height: 65px;
+    background: red;
+    border-radius: 40px
+}
+
+#color-container {
+    margin: auto;
+    max-width: 749px;
+   margin-top: 10%;
+}
+
+#results {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 570px;
+}
+
+#results p {
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#sentence-green {
+color: green;
+}
+
+#sentence-blue {
+color: blue;
+}
+
+#sentence-red {
+color: red;
+}
+
+#intro h3 {
+    font-size: 35px;
+    font-family: cursive;
+    text-align: center;
+    color:#2f0303;
+}
+
+#intro {
+    margin-bottom: -30px;
+}
